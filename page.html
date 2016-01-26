@@ -1,0 +1,307 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+	 <style>
+	 .fed-content{font-size:1.8em;}
+	 .pinkcontent{font-size:1.6em;}
+	 .title{font-size:3em;}
+	 .title-2{font-size:3.5em;}
+	 .contentwide{font-size:1.4em;}
+	 .content-small{font-size:1.8em;}
+	 @media only screen and (max-width: 1848px) {
+    .title {font-size:2em;}
+	.contentwide{font-size:1.2em;}
+	.title-2{font-size:2.5em;}
+	.content-small{font-size:1.2em;}
+	.pinkcontent{font-size:1.3em;}
+	.fed-content{font-size:1.4em;}
+}
+	 body{overflow-x: hidden;}
+	  .diamond-narrow { width: 4px; height: 4px;background-color:#3e4c50;
+						-ms-transform: rotate(45deg); /* IE 9 */
+						-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+						transform: rotate(45deg);
+						float:left;
+						margin-left:20px;
+						margin-right:20px;
+						margin-top:5px;
+						} 
+		a{float:left;color:#8e9699 !important;font-weight:bold;cursor:pointer;}
+		a:hover{color:#fff !important;text-decoration: none !important;}
+		
+		.triangle-up { width: 0; height: 0; border-left: 5px solid transparent; 
+					   border-right: 5px solid transparent; 
+					   border-bottom: 10px solid #ff6969; }
+					   
+		.showtriangle{width: 0px; height: 0px; border-left: 5px solid transparent; 
+					   border-right: 5px solid transparent; 
+					   border-bottom: 10px solid #ff6969;
+					   opacity:0;
+					   padding-top:5px;}
+					   
+		a:hover .showtriangle{opacity:1;}
+		
+		.line{width:60px;height:1px;background-color:#ff6969;opacity:0;margin-top:5px;}
+		a:hover .line{opacity:1;}
+		#web{font-size:2.5em;margin-bottom:8%;cursor:pointer;}
+		#ui{font-size:2.5em;margin-bottom:8%;cursor:pointer;}
+		#app{font-size:2.5em;margin-bottom:8%;cursor:pointer;}
+		#arrup{cursor:pointer;width:60px;height:28px;background-image:url('arrow-up.png');margin-bottom:8%}
+		#arrdown{cursor:pointer;width:60px;height:28px;background-image:url('arrow-down.png');}
+		.item{opacity:0.4;color:#697181;font-family: 'Nunito', sans-serif;}
+		.active{color:#fff;opacity:1;}
+		
+		/*#web:hover{font-size:2.5em;color:#fff;opacity:1}
+		#web:hover + #ui{font-size:2.5em;color:#697181;opacity:0.4;}
+		
+		#app:hover{font-size:2.5em;color:#fff;opacity:1}
+		
+		#app:hover .active{color:#697181;opacity:0.4;}*/
+		
+		.item:hover{font-size:2.5em;color:#fff;opacity:1}
+		
+		.item:hover .active{color:#697181;opacity:0.4;}
+		
+		
+		
+	 </style>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+			
+
+			<script>
+			$(document).ready(function(){
+    
+	$("#arrup").click(function(){
+        if($("#ui").hasClass("active")){
+		$(".active").removeClass("active");
+		$("#web").addClass("active");
+		}
+		if($("#app").hasClass("active")){
+		$(".active").removeClass("active");
+		$("#ui").addClass("active");
+		}
+		
+        });
+		
+		$("#arrdown").click(function(){
+        if($("#web").hasClass("active")){
+		$(".active").removeClass("active");
+		$("#ui").addClass("active");
+		}
+		else if($("#ui").hasClass("active")){
+		$(".active").removeClass("active");
+		$("#app").addClass("active");
+		}
+		});
+    
+});
+			</script>
+</head>
+
+<body style="background-color:#fbfbfb;">
+
+<div style="background-color:#181e20;max-width:1920px;position:relative;height:100px;padding-top:30px;" class="container-fluid">
+	
+  <center>
+  <div class="container" style="z-index:0;width:700px;height:1.5px;background-color:#393e41;position:relative;top:35px;">
+  
+<div style="margin-top:-35px;">
+	
+	<a style="font-size:11px;">HOME<div class="showtriangle"></div><div class="line"></div></a>
+	<div class="diamond-narrow"></div>
+	
+		<a style="font-size:11px;">ABOUT<div class="showtriangle"></div><div class="line"></div></a>
+	<div class="diamond-narrow"></div>
+	
+		<a style="font-size:11px;">WORK<div class="showtriangle"></div><div class="line"></div></a>
+		
+	<div style="width:130px;height:50px;float:left;"></div>
+		<a style="font-size:11px;">CONTACT<div class="showtriangle"></div><div class="line"></div></a>
+		
+	<div class="diamond-narrow"></div>
+		<a style="font-size:11px;">BLOG<div class="showtriangle"></div><div class="line"></div></a>
+		
+	<div class="diamond-narrow"></div>
+		<a style="font-size:11px;">JOBS<div class="showtriangle"></div><div class="line"></div></a>
+		
+</div>
+  
+  </div>
+  
+  </center>
+  
+  <center><div style="z-index:9999;background-image: url(Navbar.png);width:63px;height:55px;position:relative;"></div></center>
+</div>
+  <div style="width:100%;padding-right: 0px;padding-left: 0px;position:relative;" class="container-fluid">
+	
+	<img src="cover1.2.png" style="float: left; width: 100%;height: auto">
+	<div style="width:35.7%;height:27.4%;position:absolute;left:52%;top:16%;color:#fff;">
+<div class="row">
+	  <div class="col-md-6"><div style="font-size:2.5em;color:#697181;margin-top:40%;font-family: 'Nunito', sans-serif;">I am looking for...</div></div>
+	  <div id="list" class="col-md-6">
+		<center><div id="arrup"></div></center>
+		<div class="item" id="web">Web Design</div>
+			<div class="active item" id="ui">UI / UX Consulting</div>
+				<div class="item" id="app">App Development</div>
+		<center><div id="arrdown"></div></center>
+		
+		</div>
+	  </div>
+</div>
+
+	<img src="bg1.jpg" style="float: left; width: 100%;height: auto;margin-top:-24%;position:relative;z-index:-1;">
+<div style="width:100%;height:27.4%;position:absolute;top:57.5%;font-family: 'Nunito', sans-serif;">	
+	<div class="col-md-3">
+	</div>
+	<div class="title" style="color:#252932;" class="row">
+	  <div class="col-md-6">&nbsp;We help our clients achieve <span style="color:#ff6969">UI / UX excellence.</span></div>
+	  </div>
+	<div class="col-md-3">
+	  </div>
+	  <div style="clear:both"></div>
+	  <div style="color:#9494a1;" class="row contentwide">
+	  <div class="col-md-3">
+	  </div>
+	  <div style="font-weight:600;" class="col-md-6">We immerse ourselves in your business to envisage the optimum experience for your customers & users. 
+This creates strategy for the transformation of your products & services.<span style="color:#252932">Then we help you execute it.</span></div>
+	  <div class="col-md-3">
+	  </div>
+	  </div>
+	  <div style="clear:both"></div>
+	  <div style="margin-top:6.5%;margin-left:6.5%" class="row">
+	  <div class="col-md-6">
+	  </div>
+	  <div class="col-md-5">
+	  UI /UX Consulting / <span style="color:#252932;font-weight:600">Research</span>
+	  <p class="title-2">Understanding Your Users.</p>
+	  <div class="content-small" style="color:#9494a1;font-weight:500;width:75%;">User-centered design starts by setting
+			objectives and goals. It sets the foundation for
+			strategy, design, content, and information
+			architecture. At the research stage, we help you
+			to discover knowledge gaps and align your
+			assumptions with real user expectations. We
+			help you to identify a strategy to support both
+			user needs and your business goals. Based on
+			the time and resources available, we choose
+			research methods that work for you.
+	</div>
+	  </div>
+	  
+	  <div class="col-md-1">
+	  </div>
+	  </div>
+	  
+</div>	
+	
+	
+	</div>
+	
+<div style="font-family: 'Nunito', sans-serif;color:#fff;width:100%;padding-right: 0px;padding-left: 0px;position:relative;" class="container-fluid">
+	<img src="bg2.jpg" style="float: left; width: 100%;height: auto;position:relative;z-index:-1;">
+	<div style="width:100%;position:absolute;top:12%;" class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+<div style="text-align:center;font-weight:500;"><span style="font-size:1.5em;">UI / UX Consulting / <span style="color:#212124">Prototyping</span></span>
+		
+		<p class="title-2">From paper to product.</p>
+		<p class="pinkcontent">Ensuring that the visual structure and presentation of information on an application is intuitive and correlated with existing user mental models and expectations is a cornerstone of the UX design. We ensure that the right information is presented in the right way, in the right place, and at the right time.</p>
+	
+</div>
+	</div>
+	<div class="col-md-2">
+	</div>
+	
+	</div>
+
+</div>
+
+<div style="font-family: 'Nunito', sans-serif;color:#fff;width:100%;padding-right: 0px;padding-left: 0px;position:relative;" class="container-fluid">
+	<img src="bg5.jpg" style="float: left; width: 100%;height: auto;position:relative;z-index:-1;">
+	
+	  
+	  <div style="position:absolute;left:0px;margin-top:10%;margin-left:2.5%" class="row">
+	  
+	  <div class="col-md-1">
+	  </div>
+	  <div class="col-md-5">
+	  <p style="color:#9494a1;">UI /UX Consulting / <span style="color:#252932;font-weight:600">User Testing</span></p>
+	  <p class="title-2" style="color:#212124">Real World Feedback.</p>
+	  <div class="fed-content" style="color:#9494a1;font-weight:500;width:75%;">
+	  We conduct user-testing sessions and performs detailed analysis to transform data into actionable design improvements. We use different methods to gather user feedback that range from the remote user testing to one-on-one sessions. We'll help you to choose one that works for you and is the most comfortable for the rest participants.
+	</div>
+	  </div>
+	  <div class="col-md-6">
+	  </div>
+	  
+	  
+	  </div>
+
+</div>
+
+
+<div style="font-family: 'Nunito', sans-serif;color:#fff;width:100%;padding-right: 0px;padding-left: 0px;position:relative;" class="container-fluid">
+	<img src="bg4.jpg" style="float: left; width: 100%;height: auto;position:relative;z-index:-1;">
+	<div style="width:100%;position:absolute;top:12%;" class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+<div style="text-align:center;font-weight:500;"><span style="font-size:1.5em;color:#d2ff00;">UI / UX Consulting<span style="color:#fff"> / UI design</span></span>
+		
+		<p class="title-2">Design Thinking</p>
+		<p class="pinkcontent">The visual appeal of your product has an extensive impact on users. Although a product's Information Architecture is important, it doesn't facilitate engagement on its own. We employ user-centered design to produce a cohesive, and desirable effect on the target audience. We also make sure your product is a part of your brand’s unified entity and is presented with a required degree of integrity.
+</p>
+	
+</div>
+	</div>
+	<div class="col-md-2">
+	</div>
+	
+	</div>
+
+</div>
+
+
+
+<div style="font-family: 'Nunito', sans-serif;color:#fff;width:100%;padding-right: 0px;padding-left: 0px;position:relative;" class="container-fluid">
+	<img src="bg6.jpg" style="float: left; width: 100%;height: auto;position:relative;z-index:-1;">
+	
+	<div style="margin-top:6.5%;margin-left:6.5%;position:absolute;left:0px;" class="row">
+	  <div class="col-md-6">
+	  </div>
+	  <div class="col-md-5">
+	  <p style="color:#9494a1;">UI /UX Consulting / <span style="color:#252932;font-weight:600">Front-End Development</span></p>
+	  <p class="title-2" style="color:#212124">Dreaming in code .</p>
+	  <div class="content-small" style="color:#9494a1;font-weight:500;width:75%;">User-centered design starts by setting
+			objectives and goals. It sets the foundation for
+			strategy, design, content, and information
+			architecture. At the research stage, we help you
+			to discover knowledge gaps and align your
+			assumptions with real user expectations. We
+			help you to identify a strategy to support both
+			user needs and your business goals. Based on
+			the time and resources available, we choose
+			research methods that work for you.
+	</div>
+	  </div>
+	  
+	  <div class="col-md-1">
+	  </div>
+	  </div>
+	
+
+</div>
+<br/>
+
+
+
+</body>
+
+</html> 
